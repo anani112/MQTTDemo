@@ -1,0 +1,50 @@
+.navbar {
+    min-height: 72px;
+}
+.navbar-brand {
+    padding: 0 15px; height: 72px; line-height: 72px;
+}
+.navbar-brand img {
+    height: 64px;
+
+}
+.center-text {
+    text-align: center;
+}
+.count-display {
+    text-align: center;
+}
+
+.count-display .panel {
+    height: 200px;
+}
+
+.count-display h1 {
+    padding: 50px 0 0 0;
+}
+
+footer{
+    width:100%;
+    min-height:100px;
+}
+
+.red-text {
+    color: #ed4b3a;
+}
+
+.green-text {
+    color: #2cb34c;
+}
+
+.page-title {
+    text-align: center;
+    height: 96px;
+}
+
+.page-title h2 {
+    color: #555555;
+}
+
+h4 {
+    color: #555555;
+}
