@@ -1,0 +1,24 @@
+{
+  "name": "mqttdemo",
+  "version": "0.1.0",
+  "description": "Device backend services",
+  "main": "service.js",
+  "scripts": {
+    "test": "node testBroker.js",
+    "start": "node broker.js"
+  },
+  "keywords": [
+    "mqtt",
+    "broker",
+    "microservice",
+    "demo"
+  ],
+  "dependencies": {
+    "aedes": "0.26.0",
+    "aedes-persistence-redis": "2.6.6",
+    "mqtt": "2.1.3",
+    "binary": "0.3.0"
+  },
+  "author": "Anani",
+  "license": "UNLICENSED"
+}
