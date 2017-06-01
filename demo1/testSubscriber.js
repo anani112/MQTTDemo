@@ -15,11 +15,13 @@ var connOptions = {
 };
 
 var client = mqtt.connect(connOptions);
-var QOS = 1; // receive at most once
 
 client.on('connect', function() {
 	console.log('Client connected. Subcribing to topics..');
     client.subscribe(
+		// topics with wildcards
+		// + single level
+		// # multiple level
         ['V1/HOME/+/DATA/TEMP', 'V1/HOME/+/CMD/#', 'V1/HOME/+/STATUS'],
         function(err, granted){
             if (err) {
@@ -28,7 +30,6 @@ client.on('connect', function() {
                 console.log('Waiting for data..')
             }
         }
-        //'V1/HOME/+/TEMPERATURE'
     );
 })
 

@@ -2,6 +2,11 @@
 * Broker.js
 * Sets up a demo MQTT broker to handle FreshAir Devices
 *
+* install redis:
+* 	* apt-get update
+*	* apt-get -y install redis-server
+*	* sudo service redis-server status
+*    * sudo service redis-server restart
 * Created: 5/30/2017
 *
 */
@@ -32,7 +37,7 @@ var aedesOptions = {
 var aedes = require('aedes')(aedesOptions);
 var server = require('net').createServer(aedes.handle);
 
-var port = 1883;
+var port = 1883; // or 8883 for ssl
 
 server.listen(port, function () {
   console.log('server listening on port', port);

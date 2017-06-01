@@ -12,7 +12,7 @@ var connOptions = {
 	username: myId,
 	clientId: myId,
     password: 'mySuperSecurePassword',
-    will: {
+    will: { // last will testament
         topic: 'V1/HOME/' + myId + '/STATUS',
         payload: new Buffer('I lost connection :\'(')
     }
